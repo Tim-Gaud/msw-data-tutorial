@@ -72,28 +72,10 @@ export const Reminders: React.FC = () => {
     }, [reminders]);
 
     return (
-        <div
-            style={{ display: "flex", justifyContent: "center" }}
-        >
-            <div
-            className="shadow-lg"
-                style={{ display: "flex", margin: "40px auto", width: "400px" }}
-            >
-                <div
-                    style={{
-                        flex: "1 1 0%",
-                        backgroundColor: "#fff",
-                        borderRadius: "4px",
-                        padding: "48px",
-                    }}
-                >
-                    <div
-                        style={{
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "space-between",
-                        }}
-                    >
+        <div>
+            <div className="content-container">
+                <div className="main-content">
+                    <div className="heading-container">
                         <h1
                             data-testid="active-list-title"
                         >
