@@ -1,10 +1,8 @@
-import { DefaultBodyType, MockedRequest, rest, RestHandler } from 'msw';
-import { baseUrl } from '../reminders/constants';
+import { MockedRequest, rest, RestHandler } from "msw";
+import { baseUrl } from "../reminders/constants";
+import { DeleteReminderResponse, CreateReminderResponse, GetRemindersResponse } from "./types";
 
 // mock your api routes here
 
-export const getReminders = (): RestHandler<MockedRequest<DefaultBodyType>> =>
-    rest.get(`${baseUrl}`, (req, res, context) => {
-        // return res(context.json(db.campaign.findFirst({ where: { referralExid: { equals: req.params.referralExid as string } } })));
-        return res(context.json({}));
-    });
+export const getReminders = (): RestHandler<MockedRequest<GetRemindersResponse>> =>
+rest.get(baseUrl, (_req, _res, _context) => undefined)

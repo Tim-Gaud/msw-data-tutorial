@@ -37,3 +37,23 @@
         transform: rotate(360deg);
     }
 }
+
+header {
+    width: 400px;
+    margin: 40px auto 0;
+}
+
+nav {
+    text-align: left;
+}
+
+nav button {
+    min-width: fit-content;
+    padding: 2px;
+    border-radius: 0;
+    margin-right: 20px;
+}
+
+.activeTab {
+    border-bottom: 2px solid #475569;
+}

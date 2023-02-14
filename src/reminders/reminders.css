@@ -24,3 +24,26 @@ button {
 .submit-button:hover {
     color: #97a6ba;
 }
+
+.reminder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f1f5f9;
+}
+
+.reminder button {
+    visibility: hidden;
+}
+
+.reminder:hover button {
+    visibility: visible;
+}
+
+.reminder:first-child {
+    border-top: none;
+}
+
+.reminder-container {
+    padding: 0;
+}
