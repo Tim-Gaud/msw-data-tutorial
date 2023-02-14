@@ -1,0 +1,26 @@
+.bg-white {
+    --bg-opacity: 1;
+    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, var(--bg-opacity));
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+}
+
+.add-button:hover {
+    border-color: #cfd8e3;
+}
+
+button {
+    width: 34px;
+    padding: 8px;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    color: #97a6ba;
+}
