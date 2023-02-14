@@ -1,3 +1,3 @@
-import { setupServer } from 'msw/node';
+import { setupWorker } from 'msw';
 
-export const mswServer = setupServer();
+export const mswWorker = setupWorker();
