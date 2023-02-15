@@ -2,12 +2,9 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import App from "./App";
 
-describe("tests", () => {
-    test("renders learn react link", () => {
+describe("App", () => {
+    it("renders the app heading", () => {
         render(<App />);
-        // const linkElement = screen.getByText(/learn react/i);
-        // expect(linkElement).toBeInTheDocument();
-        // eslint-disable-next-line testing-library/no-debugging-utils
-        screen.debug();
+        expect(screen.getByRole("heading", { name: "Reminders" })).toBeInTheDocument();
     });
 });
