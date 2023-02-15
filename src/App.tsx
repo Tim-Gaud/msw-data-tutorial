@@ -4,16 +4,16 @@ import "./App.css";
 import { Reminders } from "./reminders/reminders";
 
 const App: React.FC = () => {
-    const [isRemindersTabActive, setIsRemindersTabActive] = React.useState(true)
+    const [isRemindersTabActive, setIsRemindersTabActive] = React.useState(false)
     return (
         <div className="App">
             <header>
                 <nav>
-                    <button className={isRemindersTabActive ? "activeTab" : ''} onClick={() => setIsRemindersTabActive(true)}>
-                        Reminders
-                    </button>
                     <button className={!isRemindersTabActive ? "activeTab" : ''} onClick={() => setIsRemindersTabActive(false)}>
                         Instructions
+                    </button>
+                    <button className={isRemindersTabActive ? "activeTab" : ''} onClick={() => setIsRemindersTabActive(true)}>
+                        Reminders
                     </button>
                 </nav>
             </header>

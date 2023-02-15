@@ -6,12 +6,13 @@ export const Instructions: React.FC = () => (
         <div className="content-container">
             <div className="main-content">
                 <div className="heading-container">
-                    <h1 data-testid="active-list-title">About</h1>
+                    <h1 data-testid="active-list-title">Instructions</h1>
+                    <p>Read through the instructions below, then navigate to the Reminders tab to view the app</p>
 
                     <h4>1. Mock APIs</h4>
                     <p>
                         The reminders app is trying to connect to a backend that doesn't
-                        exist.{" "}
+                        exist.
                     </p>
                     <ul>
                         <li>
@@ -27,8 +28,8 @@ export const Instructions: React.FC = () => (
 
                     <h4>2. Mock Database</h4>
                     <p>
-                        You may notice that your data is not persisted when switching
-                        between this page and the reminders page
+                        Once you have some route handlers setup, you may notice that your data is not persisted when switching
+                        between this page and the reminders page.
                     </p>
                     <ul>
                         <li>
